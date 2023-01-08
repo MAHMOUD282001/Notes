@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("./1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    font-family: sans-serif;
+}
+
+li{
+    list-style: none;
+}
+
+h2{
+    text-align: center;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.add-content{
+    height: calc(100vh- 100px);
+    text-align: center;
+    margin-top: 100px;
+}
+
+
+.add-content input.text-content{
+    width: 500px;
+    height: 40px;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+}
+
+.add-content button.btn{
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    background-color: crimson;
+    color: #fff;
+    border: none;
+    transition: all .5s ease-in;
+    font-size: 20px;
+    border-radius: 6px;
+}
+
+.add{
+    margin-top: 20px;
+}
+
+
+.add-content button:hover{
+    border: 1px solid crimson;
+    background: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.all-notes{
+    width: 100%;
+    min-height: 200px;
+    margin-top: 120px;
+}
+
+.all-notes.active{
+    display: block;
+}
+
+
+.all-notes .note-content{
+    text-align: center;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.all-notes .note{
+    border: none;
+    width: 400px;
+    height: 40px;
+    font-size: 20px;
+    outline: none;
+    border-radius: 6px;
+    border: none;
+}
+
+.all-notes .note:first-of-type{
+    margin-top: 30px;
+}
+
+.all-notes .edit-save{
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+
+.note-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #fff;
+}
+
+.note{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.note.none{
+    display: none;
+}
+
+.note-value{
+    width: 70%;
+    height: 40px;
+    border-radius: 6px;
+    border: none;
+    background: none;
+    color: #fff;
+    font-size: 20px;
+    outline: none;
+    cursor: pointer;
+}
+
+.delete {
+    margin-left: 20px;
+}
+
+.btn.remove-all{
+    width: 150px!important;
+    display: none!important;
+    margin: 30px auto;
+}
+
+.btn.remove-all.active{
+    display: block!important;
+}
+
+.line-through{
+    text-decoration: line-through!important;
+}
+
+
+
+@media (max-width:915px){
+    .all-notes .notes-content{
+        width: 98%;
+    }
+    
+    .all-notes .notes-content input{
+        width: 300px;
+    }
+    
+    .add-content input.text-content{
+        width: 80%;
+    }
+}
+
+@media (max-width:540px){
+    .add-content input.text-content{
+        width: 80%;
+    }
+    
+    .all-notes  .edit-save{
+        margin-left: 0;
+    }
+}
+
+
+
